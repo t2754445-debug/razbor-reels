@@ -82,6 +82,9 @@ details .body{padding:0 12px 12px;font-size:14px}
 .bar2 select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
 .cnt{color:var(--mute)}
 .note{font-size:13px;color:var(--mute);margin-top:10px}
+.credit{margin-top:16px;display:inline-flex;flex-wrap:wrap;gap:8px;align-items:center;background:#ffffff12;border:1px solid #ff7a1a66;
+border-radius:10px;padding:10px 14px;font-size:15px;color:#f4efe7;max-width:860px}.credit a{color:#ffb070;font-weight:700}
+.credit.end{background:var(--dark);margin-top:30px}
 .sys{display:grid;gap:12px;counter-reset:st}
 .sst{display:grid;grid-template-columns:64px 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .sst .num{background:var(--dark);color:var(--acc);font-size:28px;font-weight:800;display:flex;align-items:flex-start;justify-content:center;padding-top:16px}
@@ -106,7 +109,7 @@ details .body{padding:0 12px 12px;font-size:14px}
 <div class="kpi"><b>13,0 тыс.</b><span>медиана просмотров</span></div>
 <div class="kpi"><b>74,8 тыс.</b><span>лучший ролик</span></div>
 <div class="kpi"><b>33</b><span>приёма в базе</span></div></div>
-<p class="sub" style="margin-top:16px;max-width:860px">Николай Велижанин — продюсер, студия ведёт 100+ каналов. Его рилсы — про то, как делать рилсы, поэтому в каждом два слоя: что он говорит (экспертиза маркетолога) и как рассказывает (сценарий). Свои просмотры у него скромные для продюсера «миллионников»: медиана 13 тыс. на 83 тыс. подписчиков, лучший ролик — 75 тыс. Поэтому его советы здесь проверены его же цифрами: где приём подтверждён — зелёная метка, где нет — «только его слова».</p></div></header>
+<p class="sub" style="margin-top:16px;max-width:860px">Николай Велижанин — продюсер, студия ведёт 100+ каналов. Его рилсы — про то, как делать рилсы, поэтому в каждом два слоя: что он говорит (экспертиза маркетолога) и как рассказывает (сценарий). Свои просмотры у него скромные для продюсера «миллионников»: медиана 13 тыс. на 83 тыс. подписчиков, лучший ролик — 75 тыс. Поэтому его советы здесь проверены его же цифрами: где приём подтверждён — зелёная метка, где нет — «только его слова».</p><div class="credit"><span>Разбор сделал Владимир — канал «Вайб-апокалипсис» про нейросети и вайбкодинг. Хотите такой же разбор другого автора или своей ниши, есть вопросы — пишите в канал.</span> <a href="https://t.me/vibeapocalypse" target="_blank" rel="noopener">t.me/vibeapocalypse</a></div></div></header>
 <nav><div class="in"><a href="#main">Главное</a><a href="#system">Система сценария</a><a href="#swing">Качели</a><a href="#tech">Приёмы</a>
 <a href="#hooks">Хуки</a><a href="#nums">Цифры</a><a href="#lang">Язык</a><a href="#prod">Экран под текст</a><a href="#transfer">Перенос на Владимира</a>
 <a href="#tpl">Шаблон</a><a href="#reels">50 роликов</a></div></nav>
@@ -965,7 +968,7 @@ details .body{padding:0 12px 12px;font-size:14px}
 <a href="https://www.instagram.com/reel/DcqONNnR0cg/" target="_blank">Instagram</a></div></article></div>
 <p class="note">Собрано 25.09.2026 22:35 через Scrape Creators · текст — расшифровка Instagram, таймкоды — whisper · монтаж — детектор сцен ffmpeg,
 пороги как в РАЗБОР_ЧУЖИХ.md · разметка роликов — по ЗАДАНИЕ_РАЗМЕТКИ.md. </p>
-</main><script>
+<div class="credit end"><span>Разбор сделал Владимир — канал «Вайб-апокалипсис» про нейросети и вайбкодинг. Хотите такой же разбор другого автора или своей ниши, есть вопросы — пишите в канал.</span> <a href="https://t.me/vibeapocalypse" target="_blank" rel="noopener">t.me/vibeapocalypse</a></div></main><script>
 const chips=(box,attr)=>{box.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;
 box.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===c));const v=c.dataset.v;
 document.querySelectorAll(box.dataset.target).forEach(el=>{el.style.display=(v==='*'||el.dataset[attr]===v)?'':'none'})})};
